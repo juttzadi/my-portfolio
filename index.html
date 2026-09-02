@@ -1,74 +1,91 @@
 <!DOCTYPE html>
-<html>
-<head><title>Jutt Zadi | Web Developer</title>
 
-    <style>
-        nav {
-    background-color: #1f3c88;
-    padding: 15px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
-}
+```
+<title>Jutt Zadi | Web Developer</title>
 
-nav a:hover {
-    text-decoration: underline;
-}
-        body {
-            text-align: center;
-            font-family: Arial;
-            background-color: lightblue;
-            padding-top: 100px;
-        }
-
-        h1 {
-            color: darkblue;
-            font-size: 40px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        button {
-            background-color: darkblue;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-        }
-    </style>
 <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f6f8;
         color: #333;
         text-align: center;
-        padding: 40px;
+    }
+
+    /* Navigation */
+    nav {
+        background-color: #1f3c88;
+        padding: 18px;
+        margin-bottom: 50px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Home */
+    #home {
+        padding: 50px 20px;
     }
 
     h1 {
         color: #1f3c88;
         font-size: 45px;
+        margin-bottom: 15px;
     }
 
     h2 {
         color: #1f3c88;
-        margin-top: 40px;
+        font-size: 32px;
+        margin: 50px 0 25px;
     }
 
     p {
         font-size: 18px;
         line-height: 1.6;
+        margin: 10px auto;
+        max-width: 700px;
     }
 
+    /* Sections */
+    section {
+        padding: 20px;
+    }
+
+    /* Skills and Projects */
+    .skill-card {
+        background-color: white;
+        margin: 15px auto;
+        padding: 20px;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .skill-card:hover {
+        transform: scale(1.03);
+    }
+
+    /* Services */
     ul {
         list-style: none;
         padding: 0;
@@ -76,17 +93,20 @@ nav a:hover {
 
     li {
         background-color: white;
-        margin: 10px auto;
-        padding: 12px;
+        margin: 12px auto;
+        padding: 15px;
         max-width: 400px;
         border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     }
 
+    /* Buttons */
     button {
         background-color: #1f3c88;
         color: white;
         border: none;
         padding: 12px 25px;
+        margin: 10px;
         border-radius: 8px;
         font-size: 16px;
         cursor: pointer;
@@ -95,28 +115,42 @@ nav a:hover {
     button:hover {
         background-color: #162d66;
     }
-    .skill-card {
-    background-color: white;
-    margin: 15px auto;
-    padding: 20px;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    font-size: 18px;
-}
 
-.skill-card:hover {
-    transform: scale(1.03);
-}
+    /* Contact */
+    #contact {
+        padding-bottom: 60px;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+
+        nav a {
+            display: inline-block;
+            margin: 6px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
 </style>
+```
+
 </head>
-<script>
-function showMessage() {
-    alert("Welcome! You clicked the button 🎉");
-}
-</script>
+
 <body>
-    <nav>
+
+```
+<!-- Navigation -->
+<nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -124,84 +158,117 @@ function showMessage() {
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
 </nav>
-<h1 id="home">Hi, I'm Jutt Zadi 👋</h1>
+
+<!-- Home -->
+<section id="home">
+    <h1>Hi, I'm Jutt Zadi 👋</h1>
+
     <p>I'm a Beginner Web Developer</p>
-<p>I create simple, clean and responsive websites.</p>
-    <p>Beginner Web Developer | HTML | CSS | JavaScript</p>
 
-    <p>Hello! I am learning Web Development.</p>
+    <p>
+        I create simple, clean and responsive websites.
+    </p>
 
-  <section id="about">
-    <h2>About Me</h2>
-
-```
-<p>
-    Hello! I’m Jutt Zadi, a beginner Web Developer passionate
-    about creating clean, modern and responsive websites.
-</p>
-
-<p>
-    I specialize in HTML, CSS and JavaScript, and I am continuously
-    learning new web development skills to improve my work.
-</p>
-
-<p>
-    My goal is to create simple, user-friendly websites that help
-    individuals and small businesses build their online presence.
-</p>
-```
-
+    <p>
+        HTML | CSS | JavaScript
+    </p>
 </section>
 
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
 
-<h2 id="skills">My Skills</h2>
+    <p>
+        Hello! I’m Jutt Zadi, a beginner Web Developer passionate
+        about creating clean, modern and responsive websites.
+    </p>
 
-<div class="skill-card">HTML</div>
-<div class="skill-card">CSS</div>
-<div class="skill-card">JavaScript</div>
-<div class="skill-card">Web Design</div>
-<h2 id="projects">My Projects</h2>
+    <p>
+        I specialize in HTML, CSS and JavaScript, and I am continuously
+        learning new web development skills to improve my work.
+    </p>
 
-<div class="skill-card">
-    <h3>Personal Portfolio Website</h3>
-    <p>A simple portfolio website created using HTML and CSS.</p>
-</div>
+    <p>
+        My goal is to create simple, user-friendly websites that help
+        individuals and small businesses build their online presence.
+    </p>
+</section>
 
-<div class="skill-card">
-    <h3>Business Landing Page</h3>
-    <p>A clean landing page design for a small business.</p>
-</div>
+<!-- Skills -->
+<section id="skills">
+    <h2>My Skills</h2>
 
-<div class="skill-card">
-    <h3>Responsive Website Design</h3>
-    <p>A website designed to work on different screen sizes.</p>
-</div>
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">Web Design</div>
+</section>
 
-<h2 id="services">My Services</h2>
-<ul>
-    <li>Website Development</li>
-    <li>Website Design</li>
-    <li>Landing Page Design</li>
-    <li>Basic Website Maintenance</li>
-</ul>
-<h2 id="contact">Contact Me</h2>
-<p>If you want a website, feel free to contact me.</p>
+<!-- Projects -->
+<section id="projects">
+    <h2>My Projects</h2>
 
-<button onclick="contactMe()">Contact Me</button>
-<button onclick="hireMe()">Hire Me</button>
+    <div class="skill-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+            A simple portfolio website created using HTML and CSS.
+        </p>
+    </div>
 
+    <div class="skill-card">
+        <h3>Business Landing Page</h3>
+        <p>
+            A clean landing page design for a small business.
+        </p>
+    </div>
+
+    <div class="skill-card">
+        <h3>Responsive Website Design</h3>
+        <p>
+            A website designed to work on different screen sizes.
+        </p>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <h2>My Services</h2>
+
+    <ul>
+        <li>Website Development</li>
+        <li>Website Design</li>
+        <li>Landing Page Design</li>
+        <li>Basic Website Maintenance</li>
+    </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+        If you want a website, feel free to contact me.
+    </p>
+
+    <button onclick="contactMe()">Contact Me</button>
+
+    <button onclick="hireMe()">Hire Me</button>
+</section>
+
+<!-- JavaScript -->
 <script>
-function hireMe() {
-    alert("Thank you for your interest! I will contact you soon. 😊");
-}
-</script>
+    function contactMe() {
+        alert("Thank you for contacting me! 😊");
+    }
 
-<script>
-function contactMe() {
-    alert("Thank you for contacting me! 😊");
-}
+    function hireMe() {
+        alert("Thank you for your interest! I will contact you soon. 😊");
+    }
 </script>
-    <button onclick="showMessage()">Click Me</button>
+```
 
 </body>
 </html>
+
+
+
