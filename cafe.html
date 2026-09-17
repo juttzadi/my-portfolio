@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cozy Cup | Modern Café</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f3ee;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #4b2e2e;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            background-color: #fff;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h1 {
+            color: #4b2e2e;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4b2e2e;
+            color: white;
+            text-decoration: none;
+            padding: 13px 26px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #321d1d;
+        }
+
+        /* General Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4b2e2e;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        /* About */
+        .about {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* Menu */
+        .menu {
+            background-color: white;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .menu-card {
+            background-color: #f7f3ee;
+            width: 260px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .menu-card h3 {
+            color: #4b2e2e;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .price {
+            color: #4b2e2e;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /* Services */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            width: 260px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            color: #4b2e2e;
+            margin-bottom: 15px;
+        }
+
+        /* Contact */
+        .contact {
+            background-color: white;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4b2e2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .menu-card,
+            .service-card {
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <h1>☕ Cozy Cup Café</h1>
+
+        <p>
+            Fresh coffee, delicious treats and a cozy atmosphere
+            made for your perfect break.
+        </p>
+
+        <a href="#menu" class="button">View Our Menu</a>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About Our Café</h2>
+
+        <p>
+            Welcome to Cozy Cup Café! We serve freshly prepared coffee,
+            tasty desserts and delicious snacks in a comfortable and
+            friendly environment.
+        </p>
+
+        <p>
+            Whether you want to relax, meet friends or enjoy a quiet
+            cup of coffee, Cozy Cup is the perfect place for you.
+        </p>
+
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+
+        <h2>Our Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <h3>☕ Cappuccino</h3>
+                <p>
+                    Rich espresso with smooth steamed milk and foam.
+                </p>
+                <p class="price">Rs. 450</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>🍰 Chocolate Cake</h3>
+                <p>
+                    Soft and delicious chocolate cake for sweet lovers.
+                </p>
+                <p class="price">Rs. 550</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>🥪 Club Sandwich</h3>
+                <p>
+                    Fresh sandwich prepared with quality ingredients.
+                </p>
+                <p class="price">Rs. 650</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <h3>Fresh Coffee</h3>
+                <p>
+                    Freshly prepared coffee served with care.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Takeaway</h3>
+                <p>
+                    Order your favorite food and drinks for takeaway.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Free Wi-Fi</h3>
+                <p>
+                    Enjoy your coffee while staying connected.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Sialkot, Pakistan</p>
+
+        <p>📞 +92 300 1234567</p>
+
+        <p>📧 cozycup@example.com</p>
+
+        <br>
+
+        <a href="mailto:cozycup@example.com" class="button">
+            Contact Café
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Cozy Cup Café | All Rights Reserved</p>
+
+    </footer>
+
+</body>
+</html>
